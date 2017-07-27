@@ -1,0 +1,3 @@
+javac -cp src .\SAAB_Bank\src\com\cgi\banking\Customer.java
+
+java -cp .\SAAB_Bank\src\ com.cgi.banking.Customer
