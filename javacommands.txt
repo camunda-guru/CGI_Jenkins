@@ -1,3 +1,18 @@
+
+Environment variable setting
+C:\Python34\;C:\Python34\python.exe;C:\Python34\Lib;C:\Python34\DLLs
+
+
+
+SET PATH=%PATH%;%PYTHON_PATH%
+python "F:/PythonGIT/PythonGit/classdemo.py"
+
+
+
+
+
 javac -cp src .\SAAB_Bank\src\com\cgi\banking\Customer.java
 
 java -cp .\SAAB_Bank\src\ com.cgi.banking.Customer
+
+https://github.com/eswaribala/CGI_Jenkins.git
