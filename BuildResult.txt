@@ -1,0 +1,68 @@
+Started by user anonymous
+Building in workspace C:\Users\BALASUBRAMANIAM\.jenkins\workspace\Dotnet_Jenkin_TravelApp
+Cloning the remote Git repository
+Cloning repository https://gitlab.com/Parameswari/GIT_MSBuildDemo.git
+ > git.exe init C:\Users\BALASUBRAMANIAM\.jenkins\workspace\Dotnet_Jenkin_TravelApp # timeout=10
+Fetching upstream changes from https://gitlab.com/Parameswari/GIT_MSBuildDemo.git
+ > git.exe --version # timeout=10
+using GIT_ASKPASS to set credentials 
+ > git.exe fetch --tags --progress https://gitlab.com/Parameswari/GIT_MSBuildDemo.git +refs/heads/*:refs/remotes/origin/*
+ > git.exe config remote.origin.url https://gitlab.com/Parameswari/GIT_MSBuildDemo.git # timeout=10
+ > git.exe config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git.exe config remote.origin.url https://gitlab.com/Parameswari/GIT_MSBuildDemo.git # timeout=10
+Fetching upstream changes from https://gitlab.com/Parameswari/GIT_MSBuildDemo.git
+using GIT_ASKPASS to set credentials 
+ > git.exe fetch --tags --progress https://gitlab.com/Parameswari/GIT_MSBuildDemo.git +refs/heads/*:refs/remotes/origin/*
+ > git.exe rev-parse "refs/remotes/origin/master^{commit}" # timeout=10
+ > git.exe rev-parse "refs/remotes/origin/origin/master^{commit}" # timeout=10
+Checking out Revision 3801111d689b03c2a89858a0102036b6ab396113 (refs/remotes/origin/master)
+Commit message: "add README"
+ > git.exe config core.sparsecheckout # timeout=10
+ > git.exe checkout -f 3801111d689b03c2a89858a0102036b6ab396113
+First time build. Skipping changelog.
+Path To MSBuild.exe: C:\Windows\Microsoft.NET\Framework64\v4.0.30319\msbuild.exe
+Executing the command cmd.exe /C " chcp 1252 && C:\Windows\Microsoft.NET\Framework64\v4.0.30319\msbuild.exe TravelApplication.sln " && exit %%ERRORLEVEL%% from C:\Users\BALASUBRAMANIAM\.jenkins\workspace\Dotnet_Jenkin_TravelApp
+[Dotnet_Jenkin_TravelApp] $ cmd.exe /C " chcp 1252 && C:\Windows\Microsoft.NET\Framework64\v4.0.30319\msbuild.exe TravelApplication.sln " && exit %%ERRORLEVEL%%
+Active code page: 1252
+Microsoft (R) Build Engine version 4.7.2046.0
+[Microsoft .NET Framework, version 4.0.30319.42000]
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Building the projects in this solution one at a time. To enable parallel build, please add the "/m" switch.
+Build started 28-07-2017 14:27:00.
+Project "C:\Users\BALASUBRAMANIAM\.jenkins\workspace\Dotnet_Jenkin_TravelApp\TravelApplication.sln" on node 1 (default targets).
+ValidateSolutionConfiguration:
+  Building solution configuration "Debug|Any CPU".
+The target "_ConvertPdbFiles" listed in a BeforeTargets attribute at "C:\Program Files (x86)\MSBuild\4.0\Microsoft.Common.targets\ImportAfter\Xamarin.Common.targets (34,37)" does not exist in the project, and will be ignored.
+The target "_CollectPdbFiles" listed in an AfterTargets attribute at "C:\Program Files (x86)\MSBuild\4.0\Microsoft.Common.targets\ImportAfter\Xamarin.Common.targets (34,70)" does not exist in the project, and will be ignored.
+The target "_CollectMdbFiles" listed in a BeforeTargets attribute at "C:\Program Files (x86)\MSBuild\4.0\Microsoft.Common.targets\ImportAfter\Xamarin.Common.targets (41,38)" does not exist in the project, and will be ignored.
+The target "_CopyMdbFiles" listed in an AfterTargets attribute at "C:\Program Files (x86)\MSBuild\4.0\Microsoft.Common.targets\ImportAfter\Xamarin.Common.targets (41,71)" does not exist in the project, and will be ignored.
+Project "C:\Users\BALASUBRAMANIAM\.jenkins\workspace\Dotnet_Jenkin_TravelApp\TravelApplication.sln" (1) is building "C:\Users\BALASUBRAMANIAM\.jenkins\workspace\Dotnet_Jenkin_TravelApp\TravelApplication\TravelApplication.csproj" (2) on node 1 (default targets).
+ResolveAssemblyReferences:
+  Could not read state file "obj\Debug\TravelApplication.csprojResolveAssemblyReference.cache". The format of this state file is not valid.
+GenerateTargetFrameworkMonikerAttribute:
+Skipping target "GenerateTargetFrameworkMonikerAttribute" because all output files are up-to-date with respect to the input files.
+CoreCompile:
+Skipping target "CoreCompile" because all output files are up-to-date with respect to the input files.
+GenerateApplicationManifest:
+Skipping target "GenerateApplicationManifest" because all output files are up-to-date with respect to the input files.
+_CopyAppConfigFile:
+Skipping target "_CopyAppConfigFile" because all output files are up-to-date with respect to the input files.
+_CopyManifestFiles:
+  Copying file from "obj\Debug\TravelApplication.exe.manifest" to "bin\Debug\TravelApplication.exe.manifest".
+  TravelApplication -> C:\Users\BALASUBRAMANIAM\.jenkins\workspace\Dotnet_Jenkin_TravelApp\TravelApplication\bin\Debug\TravelApplication.exe.manifest
+  Copying file from "obj\Debug\TravelApplication.application" to "bin\Debug\TravelApplication.application".
+  TravelApplication -> C:\Users\BALASUBRAMANIAM\.jenkins\workspace\Dotnet_Jenkin_TravelApp\TravelApplication\bin\Debug\TravelApplication.application
+CopyFilesToOutputDirectory:
+  Copying file from "obj\Debug\TravelApplication.exe" to "bin\Debug\TravelApplication.exe".
+  TravelApplication -> C:\Users\BALASUBRAMANIAM\.jenkins\workspace\Dotnet_Jenkin_TravelApp\TravelApplication\bin\Debug\TravelApplication.exe
+  Copying file from "obj\Debug\TravelApplication.pdb" to "bin\Debug\TravelApplication.pdb".
+Done Building Project "C:\Users\BALASUBRAMANIAM\.jenkins\workspace\Dotnet_Jenkin_TravelApp\TravelApplication\TravelApplication.csproj" (default targets).
+Done Building Project "C:\Users\BALASUBRAMANIAM\.jenkins\workspace\Dotnet_Jenkin_TravelApp\TravelApplication.sln" (default targets).
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:03.71
+Finished: SUCCESS
