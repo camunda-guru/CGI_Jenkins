@@ -3,3 +3,5 @@
 3.Maven - Project build
 4.jenkins war - Continuous build
 5.Tomcat 7/8 - Web Project
+
+https://github.com/eswaribala/CGI_Jenkins.git

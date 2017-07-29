@@ -1,0 +1,8 @@
+F:\CGI_GIT\DotNetGit\TravelApplication\TravelApplication\bin\Debug\TravelApplication.exe
+
+Modify Jenkins to Run Unit Tests
+
+if exist "%WORKSPACE%\TestResults.trx" (
+del "%WORKSPACE%\TestResults.trx" 
+)
+"C:\Program Files (x86)\Microsoft Visual Studio 12.0\Common7\IDE\mstest.exe" /resultsfile:"%WORKSPACE%\TestResults.trx" /testcontainer:"%WORKSPACE%\UnitTests\bin\Debug\UnitTests.dll" /nologo
