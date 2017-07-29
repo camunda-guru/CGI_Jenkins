@@ -1,0 +1,3 @@
+javac -cp src .\Git_JavaProject\src\com\cgi\banking\FundTransfer.java
+
+java -cp .\Git_JavaProject\src\ com.cgi.banking.FundTransfer
